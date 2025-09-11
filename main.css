@@ -1,0 +1,349 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Reset & Fonts */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0c1a27;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: cyan;
+}
+
+/* Hero Section */
+.hero {
+  background: url('your-background-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #00eaff;
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #00eaff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+/* Buttons */
+.hero-buttons .btn {
+  background-color: #00eaff;
+  color: black;
+  padding: 12px 24px;
+  margin: 0 10px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero-buttons .btn-outline {
+  background: transparent;
+  border: 2px solid #00eaff;
+  color: #00eaff;
+}
+
+.hero-buttons .btn:hover {
+  background: white;
+  color: #000;
+}
+
+.hero-buttons .btn-outline:hover {
+  background: #00eaff;
+  color: black;
+}
+
+/* About Section */
+.about-section {
+  min-height: 100vh;
+  background-color: #0c1a27;
+  padding: 100px 20px 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-section h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #00eaff;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #00eaff;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #00eaff;
+  color: #00eaff;
+}
+
+.btn-outline:hover {
+  background: #00eaff;
+  color: black;
+}
+
+.hero {
+  background: url('Images/background1.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.contact-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('your-background.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 50px 20px;
+}
+
+.contact-container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.btn-submit {
+  background: #00bcd4; /* teal/cyan to match your homepage theme */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #0097a7;
+}
+
+.certificates-section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: url('images/mountains-bg.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+}
+
+.certificates-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.certificates-container p {
+  color: #ccc;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.certificate-tile {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-tile:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.certificate-tile img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.certificate-tile h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #00bcd4; /* highlight color */
+}
+
+.certificate-tile p {
+  font-size: 0.95rem;
+  color: #bbb;
+}
