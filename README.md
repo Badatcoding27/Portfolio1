@@ -1,3 +1,4 @@
 ﻿# Portfolio
 
-![Main Screenshot](Images/background1.png)
+![Main Screenshot](Images/Main.png)
+
