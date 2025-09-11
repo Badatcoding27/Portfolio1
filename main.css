@@ -10,33 +10,7 @@ button {
     cursor: pointer;
 }
 
-nav {
-    background-color: #333;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-
-  /* Reset & Fonts */
+/* Reset & Fonts */
 body, html {
   margin: 0;
   padding: 0;
@@ -58,13 +32,17 @@ ul {
 
 /* Navbar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background: transparent;
-  position: absolute;
+  position: fixed;          /* stays at the top */
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 70px;             /* fixed navbar height */
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 
 .logo {
@@ -89,13 +67,14 @@ ul {
 
 /* Hero Section */
 .hero {
-  background: url('your-background-image.jpg') no-repeat center center/cover;
+  background: url('Images/background1.png') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 0 20px;
+  margin-top: 70px; /* 👈 pushes hero down so navbar won’t overlap */
 }
 
 .hero-content {
@@ -218,15 +197,7 @@ ul {
   color: black;
 }
 
-.hero {
-  background: url('Images/background1.png') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
-}
+/* Contact Section */
 .contact-section {
   min-height: 100vh;
   display: flex;
@@ -291,6 +262,7 @@ ul {
   background: #0097a7;
 }
 
+/* Certificates Section */
 .certificates-section {
   min-height: 100vh;
   padding: 80px 20px;
